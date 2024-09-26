@@ -12,12 +12,6 @@ years = df['year'].unique()
 #Then create the first columns of dataframe
 df_visu = pd.DataFrame(years,columns = ['year'])
 
-
-#display(df_visu.head())
-#What should we have in the other columns? Population by country
-#For example Sweden
-#df[df['country'] == 'Sweden']['pop'].values
-
 #For all the countries
 for country_name in unique_names: 
     df_visu[country_name] = df[df['country']==country_name]['pop'].values
