@@ -1,6 +1,6 @@
 import pandas as pd
 url = ¨https://raw.githubusercontent.com/code-sivil/Population_graph_streamlit/refs/heads/main/population.csv¨
-df = pd.read_csv('url')
+df = pd.read_csv(url)
 df = df.drop(columns = ['Unnamed: 0'])
 df.head()
 
