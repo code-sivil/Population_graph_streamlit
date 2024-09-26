@@ -1,5 +1,6 @@
 import pandas as pd
-df = pd.read_csv('/population.csv')
+url = ¨https://github.com/code-sivil/Population_graph_streamlit/blob/main/population.csv¨
+df = pd.read_csv('url')
 df = df.drop(columns = ['Unnamed: 0'])
 df.head()
 
@@ -17,7 +18,6 @@ for country_name in unique_names:
     df_visu[country_name] = df[df['country']==country_name]['pop'].values
 
 #Make graphics
-
 import streamlit as st
 #Define the Figure title
 st.title('Population plot')
